@@ -1,0 +1,444 @@
+
+<!-- intro -->
+<!DOCTYPE html> — tells the browser this is an HTML5 document
+<html> — the root of the HTML page
+<head> — contains page information/settings
+<title> — text shown in the browser tab
+<body> — all visible content on the page
+<h1> — a main (large) heading
+<p> — a paragraph of text
+
+<!-- editors -->
+example: 
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+</body>
+</html>
+
+
+<!-- basic -->
+HTML headings are defined with the <h1> to <h6> tags.
+<h1> defines the most important heading. <h6> defines the least important heading
+
+<!-- elements -->
+HTML elements with no content are called empty elements.
+The <br> tag defines a line break, and is an empty element without a closing tag:
+
+<p>This is a <br> paragraph with a line break.</p>
+
+
+<!-- attributes -->
+
+<img src="img_girl.jpg" width="500" height="600"> 
+
+<img src="img_girl.jpg" alt="Girl with a jacket">
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+...
+</body>
+</html>
+
+<p title="I'm a tooltip">This is a paragraph.</p>
+
+
+<!-- headings -->
+<h1>Heading 1</h1> 
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6> <!-- small-->
+
+
+<!-- paragraph -->
+<h1>This is heading 1</h1>
+<p>This is some text.</p>
+<hr>
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+<hr>    <!-- <hr> creates a horizontal line on the page -->
+
+<p>This is<br>a paragraph<br>with line breaks.</p>   <!-- <br> moves text to a new line -->
+
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>     <!-- <pre> shows text exactly as you write it -->
+
+
+<!-- styles -->
+style = attribute for styling HTML elements
+background-color = for background color
+color = for text colors
+font-family = for text fonts
+font-size = for text sizes
+text-align = for text alignment
+
+
+<h1 style="text-align:center;">Centered Heading</h1>
+
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+
+<body style="background-color:powderblue;">
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+
+
+<!-- formatting -->
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+
+<b>This text is bold</b>
+<strong>This text is important!</strong>
+
+<i>This text is italic</i>
+<em>This text is emphasized</em>
+
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+
+<!-- Quotations -->
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>    <!-- <blockquote> text quoted from another source -->
+
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>  <!--  <q> tag defines a short quotation (" ")-->
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>  <!-- <abbr> used for abbreviations or acronyms -->
+
+The HTML <address> tag defines the contact information for the author/owner of a document or an article.
+
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+
+The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
+
+<address>
+Written by John Doe.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>   <!-- <address> for Contact Information -->
+
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>  <!-- <cite> title of a work, displayed in italic -->
+
+<bdo dir="rtl">This text will be written from right to left</bdo> 
+
+
+<!-- This is a comment -->
+
+<!-- colors -->
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>  <!-- rgb -->
+<h1 style="background-color:#ff6347;">...</h1>           <!-- hex -->
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1> <!-- hsl-->
+
+
+<!-- css -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+</style>
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+
+
+<!-- links -->
+<a href="url">link text</a>
+
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+
+<a href="#C4">Jump to Chapter 4</a>
+
+
+<!-- images -->
+<img src="img_girl.jpg" alt="Girl in a jacket">
+
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+<picture>
+  <source srcset="img_avatar.png">
+  <source srcset="img_girl.jpg">
+  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+
+
+<!-- favicon -->
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+
+
+<!-- page title -->
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Tutorial</title>
+</head>
+<body>
+The content of the document......
+</body>
+</html>
+
+
+<!-- tables -->
+ <table>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr style="height:200px">
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <td>Jill</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-1234</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+</tr>
+</table>
+
+<table>
+  <colgroup>
+    <col span="2">
+    <col span="3" style="visibility: collapse">
+  </colgroup>
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+...
+
+
+<!-- lists -->
+ <ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+<ul>	Defines an unordered list
+<ol>	Defines an ordered list
+<li>	Defines a list item
+<dl>	Defines a description list
+<dt>	Defines a term in a description list
+<dd>	Describes the term in a description list
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+
+<!-- block and inline -->
+<p>Hello World</p>
+<div>Hello World</div>
+
+<span>Hello World</span>
+
+<p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+
+
+<!-- div -->
+ <style>
+.mycontainer {
+  width:100%;
+  overflow:auto;
+}
+.mycontainer div {
+  width:33%;
+  float:left;
+}
+</style>
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+</style>
+
+
+<!-- classes -->
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+</body>
+</html>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+
+<!-- id -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<h1 id="myHeader">My Header</h1>
+</body>
+</html>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+
